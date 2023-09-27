@@ -61,7 +61,7 @@ details summary {
     margin:5px auto;
     color:#fff;
     display: block;
-    list-style: none !important;
+    list-style: none;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -70,6 +70,9 @@ details summary {
     border-radius: 10px;
     background: #228B22;
     transition: background-color .3s;
+}
+details summary::-webkit-details-marker {
+    display:none;
 }
 details summary:hover {
     color:#097b27;
