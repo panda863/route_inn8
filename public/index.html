@@ -158,7 +158,7 @@ img{
             <div class="hotel">
                     <img src="img/iwaki-izumi.jpg" alt="ルートインいわき泉駅前">
                     <details class="js-animation">
-                    <summary>ルートインいわき泉駅前</summary>
+                    <summary>ﾙｰﾄｲﾝいわき泉駅前</summary>
                     <div class="details-content">
                         <p>増設したっぽい西館に宿泊。バスルーム無しだから温泉行く必要あるけど部屋はその分広いし新しい。駐車場も停めれなくなるってことは無さそう。ただ線路近いから電車の走行音は聞こえる。</p>
                     </div>
@@ -209,59 +209,59 @@ img{
             const content = elem.querySelector('.details-content');
             let isAnimating = false;
             summary.addEventListener('click', (e) => {
-          e.preventDefault();
-          if (isAnimating === true) {
+        e.preventDefault();
+        if (isAnimating === true) {
             return;
-          }
-          if (elem.open) {
+        }
+        if (elem.open) {
             isAnimating = true;
             const closeDetails = content.animate(
-              {
+            {
                 opacity: [1, 0],
                 height: [content.offsetHeight + 'px', 0],
-              },
-              {
+            },
+            {
                 duration: 300,
                 easing: 'ease-in',
-              }
+            }
             );
             const rotateIcon = summary.animate(
-              { rotate: ["90deg", "0deg"] },
-              {
+            { rotate: ["90deg", "0deg"] },
+            {
                 duration: 300,
                 pseudoElement: "::before",
                 easing: 'ease-in',
                 fill: 'forwards',
-              }
+            }
             );
             closeDetails.onfinish = () => {
-              elem.removeAttribute('open');
-              isAnimating = false;
+            elem.removeAttribute('open');
+            isAnimating = false;
             }
-          } else {
+        } else {
             elem.setAttribute('open', 'true');
             isAnimating = true;
             const openDetails = content.animate(
-              {
+            {
                 opacity: [0, 1],
                 height: [0, content.offsetHeight + 'px'],
-              },
-              {
+            },
+            {
                 duration: 300,
                 easing: 'ease-in',
-              }
+            }
             );
             const rotateIcon = summary.animate(
-              { rotate: ["0deg", "90deg"] },
-              {
+            { rotate: ["0deg", "90deg"] },
+            {
                 duration: 300,
                 pseudoElement: "::before",
                 easing: 'ease-in',
                 fill: 'forwards',
-              }
+            }
             );
             openDetails.onfinish = () => {
-              isAnimating = false;
+            isAnimating = false;
             }
                 }
                 });
