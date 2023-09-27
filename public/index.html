@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial scale=1.0" />
+    <title>My ルートイン一覧</title>
+    <meta name="description" content="私が行ったことのあるルートイン" />
+
+    <link rel="icon" sizes="192x192" href="img/icon.png" />
+    <link rel="apple-touch-icon" href="img/icon.png" sizes="180x180">
+
+    <style>
+
+/*html5doctor.com Reset Stylesheetv1.6.1Last Updated: 2010-09-17Author: Richard Clark - http://richclarkdesign.comTwitter: @rich_clark*/
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+nav ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+a {margin: 0;padding: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+/* change colours to suit your needs */
+ins {background-color: #ff9;color: #000;text-decoration: none;}
+/* change colours to suit your needs */
+mark {background-color: #ff9;color: #000;font-style: italic;font-weight: bold;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted;cursor: help;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* change border colour to suit your needs */
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+input, select {vertical-align: middle;}
+
+/* --------------------------reset END-------------------------- */
+
+
+
+
+
+
+/* iPhone 縦 */
+
+
+header h1{
+    color:#fff;
+    background:#228B22;
+    height: 32px;
+    text-align: center;
+    padding-top:1em;
+}
+.container{
+    width:80%;
+    max-width: 300px;
+    margin:0 auto;
+}
+img{
+    display: inline-block;
+    width:100%;
+    height: 210px;
+    margin-top:30px;
+}
+summary{
+    text-align: center;
+    color:#fff;
+    border:outset medium #228B22;
+    border-radius: 10px;
+    background: #228B22;
+    height:30px;
+    padding-top:10px;
+    width:200px;
+    margin:5px auto;
+}
+details {
+    max-width: 520px;
+    margin:0 auto;
+}
+details summary {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    transition: background-color .3s;
+}
+details summary:hover {
+    color:#097b27;
+    background-color: #f1fff8;
+}
+
+details summary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto 0;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #f1fff8;
+    border-right: 3px solid #f1fff8;
+    transform: rotate(45deg);
+}
+details summary:hover::before{
+    border-color:#097b27;
+}
+footer{
+    margin-top:30px;
+    background:#228B22;
+    height: 28px;
+    font-size: 13px;
+    padding-top:1em;
+}
+.copyright{
+    color:#fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------幅768px以上--------------------------------- */
+
+@media (min-width:768px) {
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+}
+.hotel{
+    width:calc(50% - 5px);
+}
+img{
+    height:300px;
+}
+ 
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>My ルートイン</h1>
+        </header>
+
+        <div class="container">
+            <div class="hotel">
+                    <img src="img/natori.jpg" alt="ルートイン名取">
+                    <details class="js-animation">
+                        <summary>ルートイン名取</summary>
+                        <div class="details-content">
+                            <p>駐車場はかなり広いから絶対停めれる</p>
+                        </div>
+                    </details>
+            </div>
+            <div class="hotel">
+                    <img src="img/natori-iwanuma.jpg" alt="ルートイン名取岩沼">
+                    <details class="js-animation">
+                        <summary>ルートイン名取岩沼</summary>
+                        <div class="details-content">
+                            <p>新しい。ｺﾝﾌｫｰﾄｼﾝｸﾞﾙで広い。駐車場も広いが遠い所しか空いていないと少し歩く。朝食はメニュー少なめ。(物価高の影響？)バイキング会場は広い。</p>
+                        </div>
+                    </details>
+            </div>
+            <div class="hotel">
+                    <img src="img/iwaki-izumi.jpg" alt="ルートインいわき泉駅前">
+                    <details class="js-animation">
+                    <summary>ルートインいわき泉駅前</summary>
+                    <div class="details-content">
+                        <p>増設したっぽい西館に宿泊。バスルーム無しだから温泉行く必要あるけど部屋はその分広いし新しい。駐車場も停めれなくなるってことは無さそう。ただ線路近いから電車の走行音は聞こえる。</p>
+                    </div>
+                    </details>
+            </div>
+            <div class="hotel">
+                    <img src="img/matsukaido.jpg" alt="ルートイン水海道駅前">
+                    <details class="js-animation">
+                        <summary>ルートイン水海道駅前</summary>
+                        <div class="details-content">
+                            <p>2007年11月開業のため年季入ってるが不快感無し。駐車場は99台らしい。蛇口がお湯と水で別。シャワーやりづらいが天井は高い。朝食会場は狭め。</p>
+                        </div>
+                    </details>
+            </div>
+            <div class="hotel">
+                    <img src="img/kogaekimae.jpeg" alt="ルートイン古河駅前">
+                    <details class="js-animation">
+                        <summary>ルートイン古河駅前</summary>
+                        <div class="details-content">
+                            <p>2023/6/5行った時はスタッフ対応◎ 結構古いと思うがリフォーム済みなのか綺麗にされている。別館があり日によっては朝食会場が別館に移動しなければならないよう。別館への出入りにルームキー使用。</p>
+                        </div>
+                    </details>
+            </div>
+            <div class="hotel">
+                    <img src="img/kashiwa.jpeg" alt="ルートイン柏">
+                    <details class="js-animation">
+                        <summary>ルートイン柏</summary>
+                        <div class="details-content">
+                            <p>16号沿い。新人研修中。リフォーム後らしく特に問題なし。</p>
+                        </div>
+                    </details>
+            </div>
+        </div>
+
+        <footer>
+            <p class="copyright"><small>Copyright(C) My ルートイン All Rights Reserved.</small></p>
+        </footer>
+    </div><!--main-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        setupToggleDetailsAnimation();
+        });
+        function setupToggleDetailsAnimation() {
+        const details = document.querySelectorAll('details.js-animation');
+        details.forEach(elem => {
+            const summary = elem.querySelector('summary');
+            const content = elem.querySelector('.details-content');
+            let isAnimating = false;
+            summary.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (isAnimating === true) {
+            return;
+          }
+          if (elem.open) {
+            isAnimating = true;
+            const closeDetails = content.animate(
+              {
+                opacity: [1, 0],
+                height: [content.offsetHeight + 'px', 0],
+              },
+              {
+                duration: 300,
+                easing: 'ease-in',
+              }
+            );
+            const rotateIcon = summary.animate(
+              { rotate: ["90deg", "0deg"] },
+              {
+                duration: 300,
+                pseudoElement: "::before",
+                easing: 'ease-in',
+                fill: 'forwards',
+              }
+            );
+            closeDetails.onfinish = () => {
+              elem.removeAttribute('open');
+              isAnimating = false;
+            }
+          } else {
+            elem.setAttribute('open', 'true');
+            isAnimating = true;
+            const openDetails = content.animate(
+              {
+                opacity: [0, 1],
+                height: [0, content.offsetHeight + 'px'],
+              },
+              {
+                duration: 300,
+                easing: 'ease-in',
+              }
+            );
+            const rotateIcon = summary.animate(
+              { rotate: ["0deg", "90deg"] },
+              {
+                duration: 300,
+                pseudoElement: "::before",
+                easing: 'ease-in',
+                fill: 'forwards',
+              }
+            );
+            openDetails.onfinish = () => {
+              isAnimating = false;
+            }
+                }
+                });
+            });
+            };
+    </script>
+</body>
+</html>
