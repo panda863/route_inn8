@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "route inn"
+AuthUserFile "/.htpasswd"
+require valid-user
